@@ -1,0 +1,52 @@
+{
+  "version": "0.1.7",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.5.2",
+    "@material-ui/icons": "^4.5.1",
+    "array-move": "^2.1.0",
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "browserify-fs": "^1.0.0",
+    "core-util-is": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-dropzone": "^10.1.9",
+    "react-scripts": "^4.0.0",
+    "react-sortable-hoc": "^1.10.1",
+    "read-file": "^0.2.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.0",
+    "typeface-roboto": "0.0.75",
+    "write-json-file": "^4.3.0"
+  },
+  "scripts": {
+    "start-client": "react-scripts start",
+    "build": "react-scripts build && (cd ../ &&  npm install)",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "cd ../ && npm start"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "morgan": "^1.10.0"
+  },
+  "proxy": "http://localhost:8081"
+}
