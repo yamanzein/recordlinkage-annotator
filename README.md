@@ -1,6 +1,6 @@
 # RecordLinkage ANNOTATOR
 
-Our ([Mhd Yaman Al Zein](https://www.linkedin.com/in/yaman-zain-8b7597167/) und [Felix Kruse](https://www.linkedin.com/in/felix-kruse-38437414b/)) fork of the original *RecordLinkage ANNOTATOR* Tool is also a browser-based user interface for
+Our ([Mhd Yaman Al Zein](https://www.linkedin.com/in/yaman-zain-8b7597167/) and [Felix Kruse](https://www.linkedin.com/in/felix-kruse-38437414b/)) fork of the original *RecordLinkage ANNOTATOR* Tool is also a browser-based user interface for
 manual labeling of record pairs. Manual labeled or annotated data is useful 
 for training and validation models.
 
