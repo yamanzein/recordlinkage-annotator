@@ -23,9 +23,9 @@ only.
 
 ## Create annotation file
 
-*RecordLinkage ANNOTATOR* requires an annotation file as input. This JSON file contains your record pairs and defines a comparison schema. The [Python Record Linkage Toolkit](https://github.com/J535D165/recordlinkage) can be used to render such a file. For more information, see the documentation on [Manual Labeling](https://recordlinkage.readthedocs.io/en/latest/annotation.html). 
+*RecordLinkage ANNOTATOR* requires an annotation file as input. This JSON file contains your record pairs and defines a comparison schema. The [Python Record Linkage Toolkit](https://github.com/J535D165/recordlinkage) can be used to render such a file. For more information, see the documentation on [Manual Labeling](https://recordlinkage.readthedocs.io/en/latest/annotation.html).
 
-Version 1 of the schema is open source and can be found [here](/schema). Examples of annotation files can be found in the [examples](/examples) folder. 
+We have also developed some Skripts to create automatically the required JSON-Format from structured CSV-Data or database tables. If you are interested, please contact us.
 
 ## Extract results
 
