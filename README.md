@@ -10,7 +10,8 @@ for training and validation models.
 3. in addition, the labeling files are now uploaded and can be managed (accessed and deleted) in a directory structure.
 4. we have added statistics that show how many records need to be labeled, how many are already labeled, how many matches have been labeled and how many non-matches have been labeled.
 5. A filter function based on the annotated and to annotated records was added, as well as navigation forward and backward using the keyboard arrow keys or in the app.
-6. It is possible now also to add some comments to each record.
+6. It is possible now also to add some comments to each decision (match or no-match).
+7. We now display the attribute names in addition to the attribute values to make the match or no-match decision easy for the user.
 
 ## Try the Tool
 
