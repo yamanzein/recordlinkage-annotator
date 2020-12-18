@@ -32,7 +32,7 @@ Version 1 of the schema is open source and can be found [here](/schema). Example
 
 ## Development
 
-*RecordLinkage ANNOTATOR* is a node-js application using [React](https://reactjs.org/) as a frontend. The node-js deals with the http-equests to load, save, and delete files hosted on the server.
+*RecordLinkage ANNOTATOR* is a node-js application using [React](https://reactjs.org/) as a frontend. The node-js deals with the http-requests to load, save, and delete files hosted on the server.
 For deploying the project, first in the recordlinkage-annotator directory use "npm run build" to create a build-package of the react-application (Note: "npm install" maybe required). In the home directory then you can start the server and call the react buid-package with "npm start" or "node server.js".
 The application is configured to run on port: 8081
 
