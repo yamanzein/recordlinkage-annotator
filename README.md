@@ -4,6 +4,15 @@ Our ([Mhd Yaman Al Zein](https://www.linkedin.com/in/yaman-zain-8b7597167/) and 
 manual labeling of record pairs. Manual labeled or annotated data is useful 
 for training and validation models.
 
+## Our change from the original are the following:
+1. the application is not a pure React application. It now consists of a React frontend and a Node.js backend.
+2. through the backend, intermediate states of labeling tasks can now be saved and exported.
+3. in addition, the labeling files are now uploaded and can be managed (accessed and deleted) in a directory structure.
+4. we have added statistics that show how many records need to be labeled, how many are already labeled, how many matches have been labeled and how many non-matches have been labeled.
+
+Translated with www.DeepL.com/Translator (free version)
+
+
 At the following link we have hosted the application so you can try it out: [RecordLinkage ANNOTATOR](https://recordannotator.herokuapp.com/) 
 In the application there is a file with tuples that can be labeled (button "show files"). We got the file from the following source: https://raw.githubusercontent.com/J535D165/recordlinkage-annotator/master/examples/annotation_dishonesty.json
 
