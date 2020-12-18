@@ -10,15 +10,13 @@ for training and validation models.
 3. in addition, the labeling files are now uploaded and can be managed (accessed and deleted) in a directory structure.
 4. we have added statistics that show how many records need to be labeled, how many are already labeled, how many matches have been labeled and how many non-matches have been labeled.
 
-Translated with www.DeepL.com/Translator (free version)
-
+## Try the Tool
 
 At the following link we have hosted the application so you can try it out: [RecordLinkage ANNOTATOR](https://recordannotator.herokuapp.com/) 
 In the application there is a file with tuples that can be labeled (button "show files"). We got the file from the following source: https://raw.githubusercontent.com/J535D165/recordlinkage-annotator/master/examples/annotation_dishonesty.json
 
 The hosted version of [*RecordLinkage ANNOTATOR*](https://j535d165.github.io/recordlinkage-annotator/) on [Github-pages](https://pages.github.com/) makes use of client-side Javascript 
-only. The tool doesn't upload data. Not convinced about the safety of your data? That's 
-fine. You can deploy the code yourself locally. Please read the [Development](#development) instructions.  
+only.
 
 ## Create annotation file
 
