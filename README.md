@@ -5,10 +5,7 @@ manual labeling of record pairs. Manual labeled or annotated data is useful
 for training and validation models.
 
 At the following link we have hosted the application so you can try it out: [RecordLinkage ANNOTATOR](https://recordannotator.herokuapp.com/) 
-
-Want to give it a try? Download our [**Prison book**](https://raw.githubusercontent.com/J535D165/recordlinkage-annotator/master/examples/annotation_dishonesty.json) example file :cop: :suspect:
-
-[![Review screen of RecordLinkage ANNOTATOR](images/annotator_review.png)](https://j535d165.github.io/recordlinkage-annotator/)
+In the application there is a file with tuples that can be labeled (button "show files"). We got the file from the following source: https://raw.githubusercontent.com/J535D165/recordlinkage-annotator/master/examples/annotation_dishonesty.json
 
 The hosted version of [*RecordLinkage ANNOTATOR*](https://j535d165.github.io/recordlinkage-annotator/) on [Github-pages](https://pages.github.com/) makes use of client-side Javascript 
 only. The tool doesn't upload data. Not convinced about the safety of your data? That's 
