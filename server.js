@@ -33,23 +33,21 @@ app.get("/server/getAllFiles", function (req, res) {
   });
 });
 
-app.post("/server/overRideFile", function (req, res) {
-  console.log(req.body.fileName);
+app.post("/server/overRideFile", async function (req, res) {
+  //console.log(req.body.fileName);
   const pathToFile = './Docs/' + req.body.fileName;
 
-  fs.unlink(pathToFile, function (err) {
-    if (err) {
-      throw err;
-    } else {
-      console.log("Successfully deleted the file.");
-    }
-  });
-  let data = req.body.user;
-  fs.writeFile(pathToFile, JSON.stringify(data), function (err) {
-    if (err) throw err;
-    res.json("File has been added to the server");
-    console.log('The "data to append" was appended to file!');
-  });
+  try{
+    let data = req.body.user;
+    fs.writeFile(pathToFile, JSON.stringify(data), function (err) {
+      if (err) throw err;
+      res.json("File has been added to the server");
+      console.log('The "data to append" was appended to file!');
+    });
+  }catch(error){
+    console.log(erro.response.body)
+  }
+  
 });
 
 // This responds a POST request for the homepage
