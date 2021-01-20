@@ -115,6 +115,7 @@ export default function ReviewZone(props) {
 
   const [annotatedData, setAnnotatedData] = useState([]);
   const [toAnnotateData, setToAnnotateData] = useState([]);
+  const [mergedData, SetMergedData] = useState({})
 
   const merger = (obj1, obj2) => {
     const mergedArray = [];
@@ -127,10 +128,17 @@ export default function ReviewZone(props) {
       mergedArray.push(elem);
     });
     filterFunc({ pairs: mergedArray });
-    saveFile({ pairs: mergedArray }, props.fileName).then((response) => {
+    /*saveFile({ pairs: mergedArray }, props.fileName).then((response) => {
+      console.log(response);
+    });*/
+    SetMergedData({ pairs: mergedArray })
+  };
+
+  const saveStates =()=> {
+    saveFile(mergedData, props.fileName).then((response) => {
       console.log(response);
     });
-  };
+  }
   const onClick = () => {
     merger(annotatedData, toAnnotateData);
 
@@ -140,6 +148,7 @@ export default function ReviewZone(props) {
       console.log("Last record, we are done.");
       console.log(getStats());
       props.reviewState("export");
+      saveStates()
     }
   };
 
@@ -247,6 +256,7 @@ export default function ReviewZone(props) {
             isMatch={isMatch}
             isDistinct={isDistinct}
             onExportClick={onExportClick}
+            save={saveStates}
             index={pairIndex}
             recoredStatus={appData["pairs"][pairIndex].label_str}
             recordText={saveRecordText}

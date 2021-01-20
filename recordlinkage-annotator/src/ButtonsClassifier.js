@@ -99,6 +99,14 @@ export default function ButtonsClassifier(props) {
           No-Match
         </Buttons>
         <Buttons
+          variant="contained"
+          color="secondary"
+          className={classes.button}
+          onClick={props.save}
+        >
+          Save
+        </Buttons>
+        <Buttons
           variant="outlined"
           color="default"
           className={classes.buttonRight}
